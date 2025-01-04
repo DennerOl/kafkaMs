@@ -8,6 +8,38 @@
       "mainClass": "br.com.microservices.orchestrated.orderservice.OrderServiceApplication",
       "projectName": "order-service",
       "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=36195 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=order-service"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ProductValidationServiceApplication<product-validation-service>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.com.microservices.orchestrated.productvalidationservice.ProductValidationServiceApplication",
+      "projectName": "product-validation-service",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-PaymentServiceApplication<payment-service>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.com.microservices.orchestrated.paymentservice.PaymentServiceApplication",
+      "projectName": "payment-service",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=38897 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=payment-service"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-InventoryServiceApplication<inventory-service>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.com.microservices.orchestrated.inventoryservice.InventoryServiceApplication",
+      "projectName": "inventory-service",
+      "args": "",
       "envFile": "${workspaceFolder}/.env"
     }
   ]
