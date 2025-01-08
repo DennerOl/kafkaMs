@@ -1,4 +1,4 @@
-package br.com.microservices.orchestrated.orchestratorservice;
+package br.com.microservices.orchestrated.orchestratorservice.core.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -6,6 +6,7 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public enum ETopics {
+  // mapeamento dos topics do Orchestrador ver tabela de topics material
 
   START_SAGA("start-saga"),
   BASE_ORCHESTRATOR("orchestrator"),

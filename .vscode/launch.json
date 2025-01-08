@@ -19,7 +19,8 @@
       "mainClass": "br.com.microservices.orchestrated.productvalidationservice.ProductValidationServiceApplication",
       "projectName": "product-validation-service",
       "args": "",
-      "envFile": "${workspaceFolder}/.env"
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=41573 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=product-validation-service"
     },
     {
       "type": "java",
@@ -39,6 +40,17 @@
       "cwd": "${workspaceFolder}",
       "mainClass": "br.com.microservices.orchestrated.inventoryservice.InventoryServiceApplication",
       "projectName": "inventory-service",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=38519 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=inventory-service"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-OrchestratorServiceApplication<orchestrator-service>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.com.microservices.orchestrated.orchestratorservice.OrchestratorServiceApplication",
+      "projectName": "orchestrator-service",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }
